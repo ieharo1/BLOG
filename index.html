@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroKids 🧠 | El Cerebro que Aprende Jugando</title>
+<meta name="description" content="Blog educativo: Neurociencia, memoria y atención infantil en Educación Inicial (4-5 años). Estrategias, juegos y actividades didácticas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="particles"></canvas>
+
+<header class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">🧠</span>
+      <span class="logo-text">Neuro<em>Kids</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#neurociencia">Neurociencia</a>
+      <a href="#cerebro">Cerebro</a>
+      <a href="#atencion">Atención</a>
+      <a href="#memoria">Memoria</a>
+      <a href="#emociones">Emociones</a>
+      <a href="#actividades" class="btn-small">🎮 Actividades</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-inner">
+    <div class="hero-badge reveal">✨ Blog Educativo • Educación Inicial • ITSQMET</div>
+    <h1 class="hero-title reveal">El Cerebro que<br><span class="gradient-text">Aprende Jugando</span></h1>
+    <p class="hero-typing"> <span id="typing"></span><span class="caret">|</span></p>
+    <p class="hero-desc reveal">Descubre de manera sencilla cómo funcionan la <strong>memoria</strong> y la <strong>atención</strong> durante la infancia y aprende estrategias brutales para aplicar en el aula de 4 a 5 años.</p>
+    <div class="hero-btns reveal">
+      <a href="#actividades" class="btn btn-primary">🚀 Ver Actividades</a>
+      <a href="#neurociencia" class="btn btn-glass">📖 Explorar Blog</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Secciones</span></div>
+      <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Actividades</span></div>
+      <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Minijuegos</span></div>
+      <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% Diversión</span></div>
+    </div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="brain-card">
+      <div class="brain-emoji">🧠</div>
+      <div class="brain-waves"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="floating-chip chip1">🎯 Atención</div>
+      <div class="floating-chip chip2">💾 Memoria</div>
+      <div class="floating-chip chip3">❤️ Emoción</div>
+      <div class="floating-chip chip4">🎮 Juego</div>
+    </div>
+  </div>
+  <a href="#neurociencia" class="scroll-down">⬇</a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="marquee-track">
+<span>🧠 NEUROCIENCIA • 🎯 ATENCIÓN • 💾 MEMORIA • ❤️ EMOCIONES • 🎮 JUEGO • ✨ MOTIVACIÓN • 🧠 NEUROCIENCIA • 🎯 ATENCIÓN • 💾 MEMORIA • ❤️ EMOCIONES • 🎮 JUEGO • ✨ MOTIVACIÓN •</span>
+<span>🧠 NEUROCIENCIA • 🎯 ATENCIÓN • 💾 MEMORIA • ❤️ EMOCIONES • 🎮 JUEGO • ✨ MOTIVACIÓN • 🧠 NEUROCIENCIA • 🎯 ATENCIÓN • 💾 MEMORIA • ❤️ EMOCIONES • 🎮 JUEGO • ✨ MOTIVACIÓN •</span>
+</div></div>
+
+<main>
+<!-- 1 NEUROCIENCIA -->
+<section class="section" id="neurociencia">
+  <div class="container">
+    <div class="section-tag reveal">📚 Sección 01</div>
+    <h2 class="section-title reveal">¿Qué es la <span class="hl hl-violet">Neurociencia Educativa?</span></h2>
+    <p class="section-sub reveal">El puente entre el cerebro y el aula. No es magia, es ciencia aplicada con amor.</p>
+    <div class="grid-2">
+      <div class="card glass reveal">
+        <div class="card-icon">🔬</div>
+        <h3>Definición sencilla</h3>
+        <p>Es la disciplina que une <strong>neurociencia + psicología + educación</strong> para entender cómo aprende el cerebro y diseñar mejores formas de enseñar.</p>
+        <div class="pill-row"><span class="pill">Cerebro</span><span class="pill">Mente</span><span class="pill">Aula</span></div>
+      </div>
+      <div class="card glass reveal">
+        <div class="card-icon">💡</div>
+        <h3>3 Principios clave</h3>
+        <ul class="check-list">
+          <li><strong>Cada cerebro es único:</strong> aprende a ritmos distintos.</li>
+          <li><strong>La emoción manda:</strong> sin emoción no hay memoria duradera.</li>
+          <li><strong>El cerebro cambia:</strong> la <strong>neuroplasticidad</strong> permite aprender siempre.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="infobox reveal">
+      <div class="infobox-item"><span>🧪</span><p><strong>Neuromito ¡falso!</strong><br>No solo usamos el 10% del cerebro. ¡Lo usamos TODO!</p></div>
+      <div class="infobox-item"><span>😴</span><p><strong>Dormir aprende</strong><br>El sueño consolida la memoria. Niños de 4-5 años necesitan 10-13h.</p></div>
+      <div class="infobox-item"><span>🏃</span><p><strong>Moverse piensa</strong><br>El ejercicio aumenta el BDNF: fertilizante del cerebro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 CEREBRO -->
+<section class="section alt" id="cerebro">
+  <div class="container">
+    <div class="section-tag reveal">🧠 Sección 02</div>
+    <h2 class="section-title reveal">Cerebro y <span class="hl hl-pink">Aprendizaje Infantil</span></h2>
+    <p class="section-sub reveal">De 4 a 5 años el cerebro es una esponja turbo: 90% de su tamaño adulto y millones de conexiones por segundo.</p>
+    <div class="tabs reveal">
+      <div class="tab-btns">
+        <button class="tab-btn active" data-tab="t1">🎨 Corteza Prefrontal</button>
+        <button class="tab-btn" data-tab="t2">🐘 Hipocampo</button>
+        <button class="tab-btn" data-tab="t3">😡 Amígdala</button>
+        <button class="tab-btn" data-tab="t4">⚡ Neuronas</button>
+      </div>
+      <div class="tab-content active" id="t1">
+        <h3>🎨 La jefa en entrenamiento</h3>
+        <p>Controla atención, impulsos y planificación. Aún está <strong>inmadura</strong> a los 4-5 años: por eso les cuesta esperar turnos. ¡Necesita juego con reglas cortas para entrenarse!</p>
+        <div class="bar"><div class="bar-fill" style="--w:40%">Maduración 40%</div></div>
+      </div>
+      <div class="tab-content" id="t2">
+        <h3>🐘 El guardián de recuerdos</h3>
+        <p>El hipocampo guarda lo nuevo y lo pasa a memoria de largo plazo mientras duermen. <strong>Rutinas + repetición lúdica + cuentos</strong> lo fortalecen.</p>
+        <div class="bar"><div class="bar-fill fill-green" style="--w:75%">Actividad 75%</div></div>
+      </div>
+      <div class="tab-content" id="t3">
+        <h3>😡 La alarma emocional</h3>
+        <p>Detecta peligro y secuestra la atención si hay miedo o estrés. Un aula <strong>segura, afectiva y predecible</strong> mantiene a la amígdala tranquila y deja aprender.</p>
+        <div class="bar"><div class="bar-fill fill-orange" style="--w:90%">Sensibilidad 90%</div></div>
+      </div>
+      <div class="tab-content" id="t4">
+        <h3>⚡ Poda y conexión</h3>
+        <p>A esta edad hay <strong>poda sináptica</strong>: se eliminan conexiones no usadas y se refuerzan las que se repiten jugando. <em>"Lo que se usa, se queda".</em></p>
+        <div class="schema">
+          <div>👶 Nace: 100 mil millones neuronas</div><div class="arrow">⬇</div>
+          <div>🎮 4-5 años: 1 millón conexiones / seg</div><div class="arrow">⬇</div>
+          <div>🌳 Repetición + juego = caminos fuertes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 ATENCION -->
+<section class="section" id="atencion">
+  <div class="container">
+    <div class="section-tag reveal">🎯 Sección 03</div>
+    <h2 class="section-title reveal">Atención en niños de <span class="hl hl-cyan">4 a 5 años</span></h2>
+    <p class="section-sub reveal">La atención es el foco del cerebro. Sin foco, no hay foto (memoria).</p>
+    <div class="grid-3">
+      <div class="mini-card reveal"><div class="mini-emoji">🔦</div><h4>Atención Focalizada</h4><p>10-15 min seguidos. ¡Ese es su superpoder máximo!</p><span class="time">⏱ 10-15 min</span></div>
+      <div class="mini-card reveal"><div class="mini-emoji">🦋</div><h4>Atención Selectiva</h4><p>Les cuesta ignorar distractores. Menos ruido + consigna de 1 paso.</p><span class="time">👂 1 instrucción</span></div>
+      <div class="mini-card reveal"><div class="mini-emoji">🤹</div><h4>Atención Sostenida</h4><p>Se cansa rápido. Alterna movimiento + calma cada 15 min.</p><span class="time">🔄 alternar</span></div>
+    </div>
+    <div class="tip-box reveal">
+      <h3>👩‍🏫 Tips de oro para el aula</h3>
+      <div class="tips-grid">
+        <div>🪄 <strong>Rutina visible</strong> con pictogramas.</div>
+        <div>🎵 <strong>Canción señal</strong> para transiciones.</div>
+        <div>👀 <strong>Contacto visual</strong> + nombre antes de pedir.</div>
+        <div>🧩 <strong>Rincones</strong> sin sobrecarga visual.</div>
+        <div>⏳ <strong>Reloj de arena</strong> para tiempos.</div>
+        <div>🏆 <strong>Refuerzo inmediato</strong> y específico.</div>
+      </div>
+    </div>
+    <!-- JUEGO ATENCION -->
+    <div class="game-box reveal">
+      <h3>🎮 ¡Pruébalo! Juego de Atención: Encuentra el diferente</h3>
+      <p>Toca el emoji diferente antes de que se acabe el tiempo. ¡Como en el aula!</p>
+      <div class="game-controls"><button class="btn btn-primary" id="startAttention">▶ Iniciar juego</button><span id="attScore">Puntos: 0</span><span id="attTime">⏱ 30s</span></div>
+      <div class="att-grid" id="attGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 MEMORIA -->
+<section class="section alt" id="memoria">
+  <div class="container">
+    <div class="section-tag reveal">💾 Sección 04</div>
+    <h2 class="section-title reveal">Memoria y <span class="hl hl-orange">Aprendizaje</span></h2>
+    <p class="section-sub reveal">Recordar no es repetir como loro. Es conectar, emocionar y usar.</p>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-dot">1</div><div class="tl-card"><h4>👂 Memoria Sensorial <small>segundos</small></h4><p>Entra por los sentidos. Si es llamativo (color, sonido, movimiento) pasa al siguiente nivel.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot">2</div><div class="tl-card"><h4>🧠 Memoria de Trabajo <small>minutos</small></h4><p>Solo caben 2-4 cosas a los 4 años. Por eso: consignas cortas y apoyo visual.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot">3</div><div class="tl-card"><h4>💎 Memoria a Largo Plazo <small>para siempre</small></h4><p>Se guarda con emoción + repetición espaciada + dormir bien + contar lo aprendido.</p></div></div>
+    </div>
+    <div class="game-box reveal">
+      <h3>🃏 Minijuego de Memoria (como la Actividad 3)</h3>
+      <p>Voltea las tarjetas y encuentra las parejas. ¡Entrena tu hipocampo!</p>
+      <div class="game-controls"><button class="btn btn-primary" id="restartMemory">🔄 Reiniciar</button><span id="memMoves">Intentos: 0</span></div>
+      <div class="mem-grid" id="memGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 EMOCIONES -->
+<section class="section" id="emociones">
+  <div class="container">
+    <div class="section-tag reveal">❤️ Sección 05</div>
+    <h2 class="section-title reveal">Emociones, Juego y <span class="hl hl-green">Motivación</span></h2>
+    <p class="section-sub reveal">El cerebro aprende lo que le emociona. El juego es su lenguaje natural.</p>
+    <div class="grid-3">
+      <div class="emo-card reveal"><div class="emo-emoji">❤️</div><h4>Emociones</h4><p>La dopamina marca recuerdos. Abrazo, risa y seguridad = mejor memoria. Miedo y gritos = bloqueo (cortisol).</p></div>
+      <div class="emo-card reveal"><div class="emo-emoji">🎮</div><h4>Juego</h4><p>Jugar activa prefrontal + hipocampo + cerebelo. Juego simbólico, sensorial y con reglas simples = aprendizaje total.</p></div>
+      <div class="emo-card reveal"><div class="emo-emoji">🚀</div><h4>Motivación</h4><p>Intrínseca (curiosidad) > extrínseca (premio). Deja elegir, celebra el esfuerzo, no solo el resultado.</p></div>
+    </div>
+    <div class="video-grid reveal">
+      <div class="video-card">
+        <h4>🎥 Video: Cómo aprende el cerebro</h4>
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/OGS8HVNv5xs" title="Neurociencia infantil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+      <div class="video-card">
+        <h4>🎥 Video: El juego en educación inicial</h4>
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/4ZLKR0fm4Rw" title="Juego y aprendizaje" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVIDADES -->
+<section class="section alt" id="actividades">
+  <div class="container">
+    <div class="section-tag reveal">🎨 Actividades Didácticas</div>
+    <h2 class="section-title reveal">4 Actividades <span class="hl hl-violet">Brutales</span> para el Aula</h2>
+    <p class="section-sub reveal">2 para atención 🎯 + 2 para memoria 💾. Toca cada tarjeta para ver el plan completo.</p>
+    <div class="filter-btns reveal">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="atencion">🎯 Atención</button>
+      <button class="filter-btn" data-filter="memoria">💾 Memoria</button>
+    </div>
+
+    <div class="act-grid">
+      <!-- ACT 1 -->
+      <article class="act-card reveal" data-cat="atencion">
+        <div class="act-header at1"><span class="act-num">01</span><span class="act-cat">🎯 ATENCIÓN</span></div>
+        <h3>🕵️ Cazadores de Sonidos</h3>
+        <p class="act-intro">Detectives auditivos: escuchan, identifican y se mueven. Silencio + oído + cuerpo.</p>
+        <button class="act-toggle">Ver plan completo ▼</button>
+        <div class="act-body">
+          <div><strong>🎯 Objetivo:</strong> Fortalecer la atención auditiva selectiva y sostenida discriminando sonidos del entorno.</div>
+          <div><strong>🧰 Materiales:</strong> Venda suave, maracas/campana/claves, tarjetas con animales, parlante, reloj de arena 2 min.</div>
+          <div><strong>📝 Procedimiento:</strong><ol><li>Círculo. Un niño con ojos vendados es el detective.</li><li>La maestra esconde un sonido (campana). Suena 5 seg.</li><li>Detective señala dirección y dice qué es.</li><li>Resto imita el animal/objeto del sonido.</li><li>Rotan. 3 rondas de 5 min con pausa de movimiento.</li></ol></div>
+          <div><strong>🌟 Beneficio:</strong> Entrena corteza auditiva y prefrontal; mejora escucha, turnos y vocabulario.</div>
+          <div class="aula"><strong>🏫 En el aula:</strong> Úsalo como inicio de jornada para calmar y enfocar. Ideal lunes 9am, rincón de alfombra, luz tenue.</div>
+        </div>
+      </article>
+      <!-- ACT 2 -->
+      <article class="act-card reveal" data-cat="atencion">
+        <div class="act-header at2"><span class="act-num">02</span><span class="act-cat">🎯 ATENCIÓN</span></div>
+        <h3>🐸 La Estatua Bailarina</h3>
+        <p class="act-intro">Baile + congelamiento + consignas locas. Control inhibitorio a tope.</p>
+        <button class="act-toggle">Ver plan completo ▼</button>
+        <div class="act-body">
+          <div><strong>🎯 Objetivo:</strong> Desarrollar atención sostenida y control inhibitorio (frenar el impulso).</div>
+          <div><strong>🧰 Materiales:</strong> Música alegre, tarjetas de posturas (rana, árbol, estrella), stickers.</div>
+          <div><strong>📝 Procedimiento:</strong><ol><li>Bailan libres con la música.</li><li>Al parar, muestran tarjeta: ¡todos hacen la postura 10 seg sin reírse!</li><li>Variante: solo se congelan si suena la pandereta 2 veces.</li><li>3-4 rondas. Celebran esfuerzo con sticker.</li></ol></div>
+          <div><strong>🌟 Beneficio:</strong> Fortalece corteza prefrontal, autorregulación y escucha activa.</div>
+          <div class="aula"><strong>🏫 En el aula:</strong> Perfecta transición después del recreo para volver a la calma enfocada. 10 min en patio o aula despejada.</div>
+        </div>
+      </article>
+      <!-- ACT 3 -->
+      <article class="act-card reveal" data-cat="memoria">
+        <div class="act-header me1"><span class="act-num">03</span><span class="act-cat">💾 MEMORIA</span></div>
+        <h3>🎩 El Cofre Mágico</h3>
+        <p class="act-intro">¿Qué desapareció del cofre? Memoria visual + lenguaje en modo misterio.</p>
+        <button class="act-toggle">Ver plan completo ▼</button>
+        <div class="act-body">
+          <div><strong>🎯 Objetivo:</strong> Potenciar memoria visual y de trabajo recordando 3-5 objetos y verbalizándolos.</div>
+          <div><strong>🧰 Materiales:</strong> Caja/cofre, 5 objetos (pelota, cuchara, peluche, bloque, fruta), manta, tarjetas.</div>
+          <div><strong>📝 Procedimiento:</strong><ol><li>Muestran 5 objetos 30 seg. Nombran juntos.</li><li>Tapan con manta, sacan 1 en secreto.</li><li>Destapan: ¿qué falta? Dicen nombre + para qué sirve.</li><li>Suben nivel: 2 objetos o cambian orden.</li></ol></div>
+          <div><strong>🌟 Beneficio:</strong> Activa hipocampo y memoria de trabajo; amplía vocabulario y categorización.</div>
+          <div class="aula"><strong>🏫 En el aula:</strong> Cierre de unidad de vocabulario (animales, alimentos). En pequeños grupos de 5, rincón de lectura.</div>
+        </div>
+      </article>
+      <!-- ACT 4 -->
+      <article class="act-card reveal" data-cat="memoria">
+        <div class="act-header me2"><span class="act-num">04</span><span class="act-cat">💾 MEMORIA</span></div>
+        <h3>📖 Cuento-Eco con Gestos</h3>
+        <p class="act-intro">Cuento corto que se recuerda con cuerpo, ritmo y eco. Memoria secuencial feliz.</p>
+        <button class="act-toggle">Ver plan completo ▼</button>
+        <div class="act-body">
+          <div><strong>🎯 Objetivo:</strong> Fortalecer memoria secuencial y auditiva reteniendo 3 pasos de una historia con gestos.</div>
+          <div><strong>🧰 Materiales:</strong> Cuento de 3 escenas con pictogramas grandes, títere, alfombra.</div>
+          <div><strong>📝 Procedimiento:</strong><ol><li>Narran cuento de 3 partes, cada una con gesto (ej: 🐛 arrastra, 🦋 vuela, 🌸 huele).</li><li>Niños repiten en eco + gesto.</li><li>Esconden pictogramas: ¿qué pasó primero/ después/ al final?</li><li>Re-narran entre ellos con títere.</li></ol></div>
+          <div><strong>🌟 Beneficio:</strong> Consolida memoria a largo plazo vía emoción + movimiento + repetición espaciada.</div>
+          <div class="aula"><strong>🏫 En el aula:</strong> Hora del cuento diaria 15 min antes de salir. Conecta con ámbito Comprensión y Expresión del currículo Inicial.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="section" id="quiz">
+  <div class="container">
+    <div class="section-tag reveal">🧪 Ponte a prueba</div>
+    <h2 class="section-title reveal">Quiz <span class="hl hl-pink">NeuroKids</span></h2>
+    <p class="section-sub reveal">5 preguntas para tu exposición. ¡Saca 5/5 y eres pro!</p>
+    <div class="quiz-box reveal">
+      <div id="quizQ"></div>
+      <div id="quizOpts"></div>
+      <div class="quiz-foot"><span id="quizProg"></span><button class="btn btn-primary" id="quizNext">Siguiente ➜</button></div>
+      <div id="quizResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPOSICION -->
+<section class="section alt" id="exposicion">
+  <div class="container">
+    <div class="section-tag reveal">🎤 Para tu presentación</div>
+    <h2 class="section-title reveal">Cómo estas actividades <span class="hl hl-cyan">favorecen el aprendizaje</span></h2>
+    <div class="grid-2">
+      <div class="card glass reveal"><div class="card-icon">🎯</div><h3>Atención → puerta de entrada</h3><p><em>Cazadores</em> y <em>Estatua</em> entrenan el foco y el freno inhibitorio. Un niño que sostiene la atención <strong>codifica mejor</strong> y se distrae menos. La regla es: <strong>poca duración + mucho movimiento + consigna clara.</strong></p></div>
+      <div class="card glass reveal"><div class="card-icon">💾</div><h3>Memoria → guardar y usar</h3><p><em>Cofre</em> y <em>Cuento-Eco</em> repiten con emoción, imagen y cuerpo. Así el hipocampo pasa lo aprendido a largo plazo. La regla es: <strong>emoción + repetición lúdica + sueño.</strong></p></div>
+    </div>
+    <div class="speech reveal">
+      <h3>📝 Guion de 1 minuto para exponer</h3>
+      <p>"Elegimos el título <strong>El Cerebro que Aprende Jugando</strong> porque a los 4-5 años la corteza prefrontal aún madura y la amígdala es muy sensible. Por eso nuestras actividades duran 10-15 minutos, combinan movimiento y calma, y usan juego, emoción y repetición. Las de atención enseñan a enfocar y esperar; las de memoria enseñan a guardar y contar. Así favorecemos memoria, atención y aprendizaje sin párrafos largos: jugando."</p>
+      <button class="btn btn-glass" id="copySpeech">📋 Copiar guion</button>
+    </div>
+  </div>
+</section>
+
+<!-- FUENTES -->
+<section class="section" id="fuentes">
+  <div class="container">
+    <div class="section-tag reveal">📖 Fuentes</div>
+    <h2 class="section-title reveal">Bibliografía</h2>
+    <div class="bib reveal">
+      <ol>
+        <li>Center on the Developing Child – Harvard University (2016). <em>From Best Practices to Breakthrough Impacts.</em></li>
+        <li>Mora, F. (2017). <em>Neuroeducación: solo se puede aprender aquello que se ama.</em> Alianza Editorial.</li>
+        <li>Tokuhama-Espinosa, T. (2014). <em>Making Classrooms Better: 50 Practical Applications of Mind, Brain, and Education Science.</em> Norton.</li>
+        <li>Ministerio de Educación del Ecuador (2014). <em>Currículo de Educación Inicial.</em> Quito: MinEduc.</li>
+        <li>Diamond, A. (2013). Executive functions. <em>Annual Review of Psychology, 64</em>, 135-168.</li>
+        <li>UNICEF (2019). <em>La primera infancia importa para cada niño.</em></li>
+      </ol>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><h3>🧠 NeuroKids</h3><p>Blog educativo • Neurociencia, memoria y atención infantil • Educación Inicial 4-5 años.</p></div>
+    <div><p>Hecho con 💜 para el aula. Contenido breve, claro y aplicable.</p><a href="#inicio" class="btn btn-primary">⬆ Volver arriba</a></div>
+  </div>
+  <div class="footer-bar">© 2026 NeuroKids • ieharo1 • ¡El cerebro aprende jugando! 🎮</div>
+</footer>
+
+<button id="toTop" aria-label="Subir">⬆</button>
+<script src="script.js"></script>
+</body>
+</html>
