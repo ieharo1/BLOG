@@ -22,4 +22,4 @@ Activa Pages: Repo Settings → Pages → Deploy from branch → `main` / `/root
 - `styles.css` — diseño brutal
 - `script.js` — interactividad
 
-Hecho con 💜 por ieharo1 — 2026
+Hecho con 💜 por **Kerly Villalba** — 2026
